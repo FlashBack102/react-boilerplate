@@ -28,7 +28,11 @@ module.exports = {
 				  'style-loader',
 				  'css-loader',
 				  'sass-loader'
-			  ]
+			  ],
+			  options: {
+				  modules: true,
+				  importLoaders: 1,
+			  }
 		  } // style
 	  ]
   },
