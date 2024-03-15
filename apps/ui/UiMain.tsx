@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 
-const Main = () => {
+const UiMain = () => {
 	
 	useEffect(() => {
 		console.log("Main Component On")
 	}, []);
 	
 	return (
-		<div>
+		<div className={ `test-component` }>
 			Main Component
 		</div>
 	)
 }
 
-export default Main;
+export default UiMain;
