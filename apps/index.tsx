@@ -26,8 +26,10 @@ const store = configureStore({
 	middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger, thunk)
 })
 
+const divMain = document.getElementById('main') as HTMLElement
+
 createRoot(
-	document.getElementById('main')
+	divMain
 ).render(
 	<Provider store={ store }>
 		<App />
